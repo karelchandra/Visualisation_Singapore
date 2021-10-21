@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1200,
+  "height": 550,
+  "title": "International Flight Routes of SIA",
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/karelmonash2021/HomeWork_WK9/main/data/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "projection": {
+        "type": "equirectangular"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "peachpuff",
+        "stroke": "black"
+      }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/karelmonash2021/HomeWork_WK9/main/data/airport_cleaned.csv"
+      },
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Continents"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "Long",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Lat",
+          "type": "quantitative"
+        },
+        "size": {"value": 50},
+        "color": {"field": "Continents", "type":"nominal","scale": {
+  "domain": [
+    "North America",
+    "Europe",
+    "Africa",
+    "Asia",
+    "Oceania"
+],
+"range": [
+      "#e41a1c",
+      "#984ea3",
+      "#ff7f00",
+      "#377eb8",
+      "#a65628"
+] }},
+        "opacity": {
+                "condition": {"selection": "continent_highlight", "value": 1},
+                "value": 0.2
+            },
+        "tooltip": [
+          {"field": "Airport Name", "type": "nominal"},
+          {"field": "Country", "type": "nominal"},
+          {"field": "Continents", "type":"nominal"},
+          {"field": "Remarks", "type": "nominal"}
+        ]
+      }
+    },
+    {
+        "data": {
+        "url": "https://raw.githubusercontent.com/karelmonash2021/HomeWork_WK9/main/data/airport_cleaned.csv"
+      },
+      "mark": {"type": "rule", "color" : "steelblue", "opacity": 0.5},
+        "encoding": {
+        "longitude": {"field": "Long"},
+        "latitude": {"field": "Lat"},
+        "longitude2": {"datum": 103.994003},
+        "latitude2": {"datum": 1.35019}
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/karelmonash2021/HomeWork_WK9/main/data/airport_cleaned.csv"
+      },
+      "layer": [
+      {
+        "mark": {"type": "rule", "color" : "red", "opacity": 0.5},
+        "encoding": {
+        "longitude": {"datum": -73.77890015},
+        "latitude": {"datum": 40.63980103},
+        "longitude2": {"datum": 103.994003},
+        "latitude2": {"datum": 1.35019}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic",
+          "font": "serif"
+          },
+          "encoding": {
+            "longitude": {"datum": -73.77890015},
+            "latitude": {"datum": 40.63980103},
+            "text": {"field": "Airport Name", "type": "nominal"}, 
+            "color": {"value": "black"},
+            "opacity": {
+              "condition": {
+                "test": "datum['Airport Name'] == 'John F Kennedy International Airport'",
+                "value": 1
+                },
+                "value": 0
+              }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/karelmonash2021/HomeWork_WK9/main/data/airport_cleaned.csv"
+      },
+      "layer": [
+        {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic",
+          "font": "serif"
+          },
+          "encoding": {
+            "longitude": {"datum": 103.994003},
+            "latitude": {"datum": 1.35019},
+            "text": {"field": "Airport Name", "type": "nominal"}, 
+            "color": {"value": "black"},
+            "opacity": {
+              "condition": {
+                "test": "datum['Airport Name'] == 'Singapore Changi Airport'",
+                "value": 1
+                },
+                "value": 0
+              }
+          }
+        }
+      ]
+    }
+  ],
+"config": { "title": { "font": "sans-serif", "fontSize": 16 } }
+}

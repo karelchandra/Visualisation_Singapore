@@ -1,0 +1,85 @@
+year,cargo_type_primary,cargo_type_secondary,cargo_throughput
+2000,General Cargo,Containerised,185856.95
+2000,General Cargo,Conventional,13719.81
+2000,Bulk Cargo,Oil,113329.35
+2000,Bulk Cargo,Non-Oil Bulk,12684.93
+2001,General Cargo,Containerised,171208.6
+2001,General Cargo,Conventional,14867.06
+2001,Bulk Cargo,Oil,113759.06
+2001,Bulk Cargo,Non-Oil Bulk,13652.25
+2002,General Cargo,Containerised,183954.95
+2002,General Cargo,Conventional,14565.61
+2002,Bulk Cargo,Oil,120667.26
+2002,Bulk Cargo,Non-Oil Bulk,15968.07
+2003,General Cargo,Containerised,191687.64
+2003,General Cargo,Conventional,14759.89
+2003,Bulk Cargo,Oil,123374.66
+2003,Bulk Cargo,Non-Oil Bulk,17871.96
+2004,General Cargo,Containerised,223503.33
+2004,General Cargo,Conventional,17378.17
+2004,Bulk Cargo,Oil,129328.19
+2004,Bulk Cargo,Non-Oil Bulk,23207.91
+2005,General Cargo,Containerised,241972.99
+2005,General Cargo,Conventional,20292.14
+2005,Bulk Cargo,Oil,137826.21
+2005,Bulk Cargo,Non-Oil Bulk,23176.29
+2006,General Cargo,Containerised,258552.99
+2006,General Cargo,Conventional,22840.3
+2006,Bulk Cargo,Oil,153029.48
+2006,Bulk Cargo,Non-Oil Bulk,14081.16
+2007,General Cargo,Containerised,289094.18
+2007,General Cargo,Conventional,25823.2
+2007,Bulk Cargo,Oil,157382.31
+2007,Bulk Cargo,Non-Oil Bulk,11316.38
+2008,General Cargo,Containerised,308489.7
+2008,General Cargo,Conventional,27934.88
+2008,Bulk Cargo,Oil,167318.91
+2008,Bulk Cargo,Non-Oil Bulk,11671.81
+2009,General Cargo,Containerised,262896.83
+2009,General Cargo,Conventional,17452.06
+2009,Bulk Cargo,Oil,177323.68
+2009,Bulk Cargo,Non-Oil Bulk,14627.7
+2010,General Cargo,Containerised,289693.47
+2010,General Cargo,Conventional,23989.71
+2010,Bulk Cargo,Oil,177070.25
+2010,Bulk Cargo,Non-Oil Bulk,12588.68
+2011,General Cargo,Containerised,309379.89
+2011,General Cargo,Conventional,26130.62
+2011,Bulk Cargo,Oil,183843.32
+2011,Bulk Cargo,Non-Oil Bulk,11821.76
+2012,General Cargo,Containerised,323713.97
+2012,General Cargo,Conventional,29827.63
+2012,Bulk Cargo,Oil,169671.47
+2012,Bulk Cargo,Non-Oil Bulk,14798.99
+2013,General Cargo,Containerised,333048.96
+2013,General Cargo,Conventional,32067.42
+2013,Bulk Cargo,Oil,180449.47
+2013,Bulk Cargo,Non-Oil Bulk,15322.03
+2014,General Cargo,Containerised,353538.67
+2014,General Cargo,Conventional,30879.68
+2014,Bulk Cargo,Oil,181679.36
+2014,Bulk Cargo,Non-Oil Bulk,15170.33
+2015,General Cargo,Containerised,331739.67
+2015,General Cargo,Conventional,30118.8
+2015,Bulk Cargo,Oil,195836.9
+2015,Bulk Cargo,Non-Oil Bulk,18150.4
+2016,General Cargo,Containerised,328195.65
+2016,General Cargo,Conventional,25047.76
+2016,Bulk Cargo,Oil,221413.38
+2016,Bulk Cargo,Non-Oil Bulk,18639.88
+2017,General Cargo,Containerised,349101.4025
+2017,General Cargo,Conventional,26944.314589999998
+2017,Bulk Cargo,Oil,233038.75699999998
+2017,Bulk Cargo,Non-Oil Bulk,18603.58093
+2018,General Cargo,Containerised,367421.8949
+2018,General Cargo,Conventional,24323.3374
+2018,Bulk Cargo,Oil,221525.424
+2018,Bulk Cargo,Non-Oil Bulk,16854.61461
+2019,General Cargo,Containerised,365234.1292
+2019,General Cargo,Conventional,24201.50559
+2019,Bulk Cargo,Oil,219444.71600000001
+2019,Bulk Cargo,Non-Oil Bulk,17640.813169999998
+2020,General Cargo,Containerised,357978.7583
+2020,General Cargo,Conventional,18391.54518
+2020,Bulk Cargo,Oil,194328.646
+2020,Bulk Cargo,Non-Oil Bulk,20039.30599
